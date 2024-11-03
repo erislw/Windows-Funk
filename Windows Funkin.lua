@@ -92,7 +92,7 @@ function onCreate()
     verseTranslate('dn', 'spanish', 'Eliminar archivos inútiles')
     verseTranslate('odp', 'spanish', 'Opciones de rendimiento')
     verseTranslate('sb', 'spanish', 'Emulador de lo windows (REINICIA EL PC)')
-    -- mi
+    -- Lo siento por cualquier cosa mal, lo hice para practicar mi español un poco :sob:
 
     makeLuaSprite('fundinho', '', -390, 0)
     makeGraphic('fundinho', screenWidth+100, screenHeight+120, '000000')
@@ -101,7 +101,7 @@ function onCreate()
     addLuaSprite('fundinho', false)
 
     --credits
-    makeLuaText('credits', 'Creator: Marshverso (YT and DC)     Menu design: FacheFNF (DC)     Beta Testers: FandeFNF (ST) and Erislwlol(X)', 0, screenWidth, 10)
+    makeLuaText('credits', 'Creator: Marshverso (YT and DC)     Menu design: FacheFNF (DC) Spanish Translator: ErisW Erisw(DC, X)     Beta Testers: FandeFNF (ST) and Erisw(DC, X)', 0, screenWidth, 10)
     setTextSize('credits', 25)
     setObjectCamera('credits', 'other')
     setTextAlignment('credits', 'left')
