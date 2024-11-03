@@ -82,6 +82,18 @@ function onCreate()
     verseTranslate('odp', 'portuguese', 'Opções de desempenho')
     verseTranslate('sb', 'portuguese', 'Emulador do windows (PC RESET)')
 
+    verseTranslate('title', 'chinese', 'WINDOWS FUNK')
+      verseTranslate('va', 'chinese', '检查是否有损坏的文件')
+      verseTranslate('vh', 'chinese', '检查硬盘是否损坏（C：RESET') --professora de português é foda
+      verseTranslate('vr', 'chinese', '检查内存（电脑重置）')
+      verseTranslate('rm', 'chinese', "删除水印（电脑重置）")
+      verseTranslate('desfrag', 'chinese', '优化单元')
+      verseTranslate('cache', 'chinese', '清除缓存')
+      verseTranslate('dn', 'chinese', '性能选项')
+      verseTranslate('odp', 'chinese', '防病毒')
+      verseTranslate('sb', 'chinese', 'Windows沙箱')
+
+
     makeLuaSprite('fundinho', '', -390, 0)
     makeGraphic('fundinho', screenWidth+100, screenHeight+120, '000000')
     setObjectCamera('fundinho', 'other')
