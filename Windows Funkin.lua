@@ -53,10 +53,6 @@ function onCreate()
   --[[setPropertyFromClass('flixel.FlxG', 'drawFramerate', 480)
   setPropertyFromClass('flixel.FlxG', 'updateFramerate', 480)]]
 
-  if not (buildTarget == 'windows') then
-    close(false)
-  end
-
   if getDataFromSave('saiko', 'menu') then
     makeLuaText('title', 'WINDOWS FUNKIN', 500, 40, 30)
     setTextSize('title', 100)
@@ -103,8 +99,8 @@ function onCreate()
     setTextSize('versionW', 40)
     setObjectCamera('versionW', 'other')
     setTextAlignment('versionW', 'right')
-    setProperty('versionW.y', screenHeight-getProperty('versionW.height'))
-    setProperty('versionW.x', screenWidth-getProperty('versionW.width'))
+    setProperty('versionW.y', screenHeight-getProperty('versionW.height')-10)
+    setProperty('versionW.x', screenWidth-getProperty('versionW.width')-10)
     addLuaText('versionW')
 
     doTweenX('creditsX', 'credits', -getProperty('credits.height')-getProperty('credits.x'), 15, 'linear')
