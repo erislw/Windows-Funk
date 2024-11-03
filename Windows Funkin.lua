@@ -99,7 +99,7 @@ function onCreate()
     setTextSize('versionW', 40)
     setObjectCamera('versionW', 'other')
     setTextAlignment('versionW', 'right')
-    setProperty('versionW.y', screenHeight-getProperty('versionW.height')-10)
+    setProperty('versionW.y', screenHeight-getProperty('versionW.height')-5)
     setProperty('versionW.x', screenWidth-getProperty('versionW.width')-10)
     addLuaText('versionW')
 
