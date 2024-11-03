@@ -105,7 +105,7 @@ function onCreate()
     setObjectCamera('versionW', 'other')
     setTextAlignment('versionW', 'right')
     setProperty('versionW.y', screenHeight-getProperty('versionW.height')-10)
-    setProperty('versionW.x', screenWidth-getProperty('versionW.width')-10)
+    setProperty('versionW.x', screenWidth-getProperty('versionW.width')-50)
     addLuaText('versionW')
 
     doTweenX('creditsX', 'credits', -getProperty('credits.height')-getProperty('credits.x'), 15, 'linear')
