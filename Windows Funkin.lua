@@ -14,7 +14,6 @@ local options = {
 }
 
 local keyUnit = 'NAMEUNIT'
-local sonic = 0
 luaDebugMode = true
 
 --STOP GAME
