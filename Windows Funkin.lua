@@ -89,7 +89,7 @@ function onCreate()
     addLuaSprite('fundinho', false)
 
     --credits
-    makeLuaText('credits', 'Creator: Marshverso (YT and DC)     Menu design: FacheFNF (DC)     Beta Tester: FandeFNF (ST)', 0, screenWidth, 10)
+    makeLuaText('credits', 'Creator: Marshverso (YT and DC)     Menu design: FacheFNF (DC)     Beta Testers: FandeFNF (ST) and Erislwlol(X)', 0, screenWidth, 10)
     setTextSize('credits', 25)
     setObjectCamera('credits', 'other')
     setTextAlignment('credits', 'left')
