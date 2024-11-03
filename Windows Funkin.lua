@@ -115,10 +115,10 @@ function onCreate()
     setObjectCamera('fundinho1', 'other')
     addLuaSprite('fundinho1', false)
 
-    makeLuaSprite('fundinho2', '', 0, screenHeight-50)
+    --[[makeLuaSprite('fundinho2', '', 0, screenHeight-50)
     makeGraphic('fundinho2', screenWidth, 50, '000000')
     setObjectCamera('fundinho2', 'other')
-    addLuaSprite('fundinho2', false)
+    addLuaSprite('fundinho2', false)]]
 
     for i=1,40 do
       makeLuaSprite('block'..i, '', screenWidth/2.5, getRandomInt(10, 680))
