@@ -50,15 +50,9 @@ end
 
 --create. . . lol
 function onCreate()
-  initSaveData('saiko', 'saiko')
-
   --fps plus lol
   --[[setPropertyFromClass('flixel.FlxG', 'drawFramerate', 480)
   setPropertyFromClass('flixel.FlxG', 'updateFramerate', 480)]]
-
-  if getDataFromSave('saiko', 'menu') == nil then
-    getDataFromSave('saiko', 'menu', false)
-  end
 
   if not (buildTarget == 'windows') then
     close(false)
@@ -106,12 +100,25 @@ function onCreate()
     setTextAlignment('credits', 'left')
     addLuaText('credits')
 
+    makeLuaText('versionW', 'v6', 0, 0, 0)
+    setTextSize('versionW', 25)
+    setObjectCamera('versionW', 'other')
+    setTextAlignment('versionW', 'right')
+    setProperty('versionW.y', screenHeight-getProperty('versionW.height'))
+    setProperty('versionW.x', screenWidth-getProperty('versionW.width'))
+    addLuaText('versionW')
+
     doTweenX('creditsX', 'credits', -getProperty('credits.height')-getProperty('credits.x'), 15, 'linear')
 
     makeLuaSprite('fundinho1')
     makeGraphic('fundinho1', screenWidth, 50, '000000')
     setObjectCamera('fundinho1', 'other')
     addLuaSprite('fundinho1', false)
+
+    makeLuaSprite('fundinho2', '', 0, screenHeight-50)
+    makeGraphic('fundinho2', screenWidth, 50, '000000')
+    setObjectCamera('fundinho2', 'other')
+    addLuaSprite('fundinho2', false)
 
     for i=1,40 do
       makeLuaSprite('block'..i, '', screenWidth/2.5, getRandomInt(10, 680))
@@ -191,11 +198,6 @@ function onCreatePost()
 end
 
 function onUpdate(elapsed)
-  if (keyJustPressed('back') and getDataFromSave('saiko', 'menu') and not selectionStop) or getPropertyFromClass('flixel.FlxG', 'keys.justPressed.SIX') then
-    setDataFromSave('saiko', 'menu', not getDataFromSave('saiko', 'menu'))
-    restartSong(false)
-  end
-
   if getDataFromSave('saiko', 'menu') then
     --dev kit
     if getPropertyFromClass('flixel.FlxG', 'keys.justPressed.R') and luaDebugMode then
