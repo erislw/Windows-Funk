@@ -2,7 +2,7 @@
 local sysLanguage = os.setlocale(nil, 'collate')
 local sysLanguage = sysLanguage:lower()
 
-local keys = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}
+local keys = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ñ'}
 
 local selection = 1
 local selectionStop = false
@@ -81,6 +81,18 @@ function onCreate()
     verseTranslate('dn', 'portuguese', 'Limpar arquivos inúteis')
     verseTranslate('odp', 'portuguese', 'Opções de desempenho')
     verseTranslate('sb', 'portuguese', 'Emulador do windows (PC RESET)')
+
+    verseTranslate('title', 'spanish', 'WINDOWS FUNK')
+    verseTranslate('va', 'spanish', 'Buscar archivos dañados ')
+    verseTranslate('vh', 'spanish', 'Comprueba si el disco está dañado (C: REINICIA)') --professora de espanhol é foda
+    verseTranslate('vr', 'spanish', 'Comprobar ram (PC RESET)')
+    verseTranslate('rm', 'spanish', "Eliminar marca de agua de Windows (REINICIA EL PC)")
+    verseTranslate('desfrag', 'spanish', 'Optimice tu disco')
+    verseTranslate('cache', 'spanish', 'Borrar la caché')
+    verseTranslate('dn', 'spanish', 'Eliminar archivos inútiles')
+    verseTranslate('odp', 'spanish', 'Opciones de rendimiento')
+    verseTranslate('sb', 'spanish', 'Emulador de lo windows (REINICIA EL PC)')
+    -- mi
 
     makeLuaSprite('fundinho', '', -390, 0)
     makeGraphic('fundinho', screenWidth+100, screenHeight+120, '000000')
